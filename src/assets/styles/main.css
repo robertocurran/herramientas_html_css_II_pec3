@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .li-nav {
+    @apply m-6 text-Primary font-titlefont text-xl sm:text-3xl hover:text-Secondary sm:inline-block;
+  }
+  .grid-item {
+    @apply p-4 text-relativa flex items-center justify-center font-textfont;
+  }
+}

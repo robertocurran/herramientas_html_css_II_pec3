@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        />
+        <link href="assets/fonts/Ubuntu-Regular.ttf" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/jmh-beda" rel="stylesheet" />
+        <!-- do not remove this line! -->
+        <title>PEC 3</title>
+    </head>
+    <body class="bg-Background text-Secondary">
+        <include src="./views/navbar.html"></include>
+        <div
+            class="block sm:grid sm:h-fit sm:grid-flow-dense sm:grid-cols-main sm:grid-rows-main sm:gap-0"
+        >
+            <!-- <img
+                class="sm:object-cover sm:w-80 sm:h-48"
+                src="assets/images/caballeros1.png"
+                alt="ARMADUROCK en concierto"
+            /> -->
+            <include
+                src="components/grid_image.html"
+                locals='{
+                "row": "1",
+                "col": "1",
+                "img_path": "assets/images/caballeros1.png",
+                "alt": "ARMADUROCK en concierto" }'
+            >
+            </include>
+
+            <div
+                class="sm:fa-hand-fist sm:row-start-1 sm:col-start-2 sm:col-span-4 sm:row-span-2 sm:h-70vh"
+            >
+                <div
+                    class="text-7xl text-center font-titlefont z-10 sm:text-relativatitle sm:absolute sm:translate-x-64"
+                >
+                    ARMADUROCK
+                </div>
+                <div
+                    class="text-7xl text-Background font-titlefont z-0 sm:text-relativatitle sm:absolute sm:translate-x-64 mt-2 ml-2"
+                >
+                    ARMADUROCK
+                </div>
+                <img
+                    class="sm:object-cover sm:w-full sm:h-full"
+                    src="assets/images/caballeros3.png"
+                    alt="Music Festival"
+                />
+            </div>
+
+            <div
+                class="text-2xl text-center font-titlefont bg-SemiBackground my-8 mx-4 sm:grid-item sm:rounded-lg sm:font-titlefont sm:col-start-6 sm:row-start-1 sm:px-4 sm:py-4"
+            >
+                ¡Rock duro forjado!
+            </div>
+
+            <div class="text-2xl sm:grid-item sm:row-start-2">
+                <p>¡Tickets para 2023 ya a la venta!</p>
+            </div>
+
+            <div class="text-2xl sm:grid-item sm:row-start-2 sm:col-start-6">
+                <p>
+                    Ven a nuestro festival de música y disfruta de la emoción
+                    del rock duro medieval.
+                </p>
+            </div>
+
+            <!-- <img
+                class="sm:object-scale-down sm:row-start-3 sm:col-start-1 sm:w-80 sm:h-48"
+                src="assets/images/concierto7.png"
+                alt="Music Festival"
+            /> -->
+
+            <include
+                src="components/grid_image.html"
+                locals='{
+                "row": "3",
+                "col": "1",
+            "img_path": "assets/images/concierto7.png",
+           "alt": "Music Festival" }'
+            >
+            </include>
+
+            <!-- <img
+                class="sm:object-fill sm:row-start-3 sm:col-start-6 sm:w-80 sm:h-48"
+                src="assets/images/concierto6.png"
+                alt="ARMADUROCK en concierto"
+            /> -->
+
+            <include
+                src="components/grid_image.html"
+                locals='{
+                    "row": "3",
+                    "col": "6",
+                "img_path": "assets/images/concierto6.png",
+               "alt": "ARMADUROCK en concierto" }'
+            >
+            </include>
+
+            <div
+                class="text-2xl text-center sm:grid-item sm:row-start-4 sm:col-start-1 sm:h-40"
+            >
+                <p>
+                    <a class="text-Primary font-bold" href=""> Galería </a>
+                    de fotos
+                </p>
+            </div>
+
+            <div
+                class="text-2xl text-center sm:grid-item sm:row-start-4 sm:col-start-6"
+            >
+                <p>
+                    Conoce a la
+                    <a class="text-Primary font-bold" href="">banda</a>
+                </p>
+            </div>
+        </div>
+
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>

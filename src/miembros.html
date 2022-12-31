@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        />
+        <link href="assets/fonts/Ubuntu-Regular.ttf" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/jmh-beda" rel="stylesheet" />
+        <!-- do not remove this line! -->
+        <title>PEC 3</title>
+    </head>
+    <body class="bg-Background text-Secondary">
+        <include src="./views/navbar.html"></include>
+        <h1 class="font-titlefont text-center text-6xl mb-4">
+            Miembros de ARMADUROCK
+        </h1>
+        <div
+            class="px-8 text-Background text-center sm:grid sm:grid-cols-3 sm:gap-4 sm:pl-48 sm:pr-48"
+        >
+            <include
+                src="components/card.html"
+                locals='{
+                 "img_path": "assets/images/guitarrista1.png",
+                 "name": "Sir Lancelot",
+                "title": "Guitarrista" }'
+            >
+            </include>
+
+            <include
+                src="components/card.html"
+                locals='{
+             "img_path": "assets/images/singer.png",
+             "name": "El Cid",
+            "title": "Vocal" }'
+            >
+            </include>
+
+            <include
+                src="components/card.html"
+                locals='{
+             "img_path": "assets/images/bajista.png",
+             "name": "Don Quixote",
+            "title": "Bajista" }'
+            >
+            </include>
+
+            <include
+                src="components/card.html"
+                locals='{
+            "img_path": "assets/images/bateria.png",
+            "name": "The Black Knight",
+            "title": "Batería" }'
+            >
+            </include>
+
+            <include
+                src="components/card.html"
+                locals='{
+            "img_path": "assets/images/guitarrista2.png",
+            "name": "Rey Arturo",
+            "title": "Guitarrista" }'
+            >
+            </include>
+
+            <include
+                src="components/card.html"
+                locals='{
+            "img_path": "assets/images/teclista.png",
+            "name": "Amadís de Gaula",
+            "title": "Teclista" }'
+            >
+            </include>
+        </div>
+
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>
